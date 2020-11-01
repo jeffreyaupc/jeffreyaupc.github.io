@@ -117,10 +117,6 @@ nav a:focus {
   padding: 1rem;
 }
 
-.menu dl{
-  margin-bottom: 1rem;
-}
-
 .menu dt a {
   font-size: 1.5rem;
   color: #17d2a3;

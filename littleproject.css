@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+}
+
+/* Typography */
+
+.site-title h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #143774;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subtitle{
+    font-weight: bold;
+    color: #1792d2;
+    font-size: 1rem;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    background: #f8f8f8;
+    padding: 2em 0;
+}
+
+/* layout */
+
+
+
+/* navigation */
+
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li{
+    margin: 0 1em;
+}
+
+nav a{  
+    padding: 0.25rem;
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: 700;  
+}
+
+nav a:hover{
+    color: #1792d2;
+}
+
+nav a:focus {
+    color: #1792d2;    
+}
+
+.current-page{
+    border: 1px solid rgb(255, 0, 0)
+}
+
+.current-page:hover{
+    color: #ff0000;
+}
+
+/* image */
+
+.top-container{
+    background-image: url(1276843635.jpg);
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  min-height: 95.3vh;
+  /* max-width: 1280px; */
+  margin: 0 auto;
+}
+
+.container {
+    max-width: 2560px;
+    min-height: 95.3vh;
+    margin: 0 auto;
+  }
+
+#main-pic{
+    margin-top: 0%;
+    width: 100%;
+}
+
+.section-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    background: linear-gradient( to left, rgba(3, 155, 185, 0.97), rgba(84, 83, 134, 0.97) );
+    /* height: 900px; */
+    max-height: 900px;
+    max-width: 1280px;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    margin: auto;
+    margin-top: 4rem;
+    border-radius: 12px;
+    transition: all 0.5s ease-in-out;
+  }
+
+/* sections */
+
+
+
+.menu dl{
+    color:  #17d2a3;
+    border: 2px solid rgb(255, 195, 127);
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.menu dt a{
+    font-size: 1.5rem;
+    color:  #17d2a3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu dd{
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.menu dt a:hover{
+    /* color:  rgb(198, 210, 23); */
+    animation: linkHover 1s infinite;
+}
+@keyframes linkHover {
+    0%{
+        color: #17d2a3
+    }
+    50%{
+        color: #b6ffeb;
+    }
+    100%{
+        color: #17d2a3
+    }
+}
+
+/* media */
+
+@media (max-width: 600px){
+    .section-container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px){
+    .leftcol, .rightcol{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .bio-info{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px){
+    .contacts li {
+        font-size: 1.5rem;
+        padding: 0 20%;
+    }
+}

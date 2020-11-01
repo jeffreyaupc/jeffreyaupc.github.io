@@ -451,7 +451,6 @@ nav a:focus {
 
 @media (max-height: 720px) {
   .btn-intro {
-    margin-top: 28rem;
     font-size: 1.5rem;
     padding: 1rem;
     width: 10rem;

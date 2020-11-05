@@ -154,7 +154,11 @@ nav a:focus {
   display: inline-block;
   visibility: hidden;
   opacity: 0;
-  background: linear-gradient( to left, rgba(3, 155, 185, 0.85), rgba(84, 83, 134, 0.85) );
+  background: linear-gradient(
+    to left,
+    rgba(3, 155, 185, 0.85),
+    rgba(84, 83, 134, 0.85)
+  );
   /* height: 900px; */
   max-height: 800px;
   max-width: 1280px;
@@ -180,7 +184,6 @@ nav a:focus {
 .leftcol {
   width: 75%;
 }
-
 
 /* right col */
 
@@ -224,7 +227,7 @@ nav a:focus {
 }
 
 /* new stuff */
-.btn-container{
+.btn-container {
   position: absolute;
   bottom: 33%;
   left: 0;
@@ -249,15 +252,15 @@ nav a:focus {
   cursor: pointer;
   animation: introHover 1s infinite;
 }
-@keyframes introHover{
-  0%{
+@keyframes introHover {
+  0% {
     color: rgb(134, 232, 236);
   }
-  50%{
+  50% {
     color: whitesmoke;
     background: rgb(134, 232, 236);
   }
-  100%{
+  100% {
     color: rgb(134, 232, 236);
   }
 }
@@ -301,7 +304,85 @@ nav a:focus {
 
 /* media */
 
+/* max width */
 
+@media (max-width: 1920px) {
+  body {
+    overflow: hidden;
+  }
+  .top-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-container {
+    width: 100%;
+    height: 700px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 2rem;
+    display: inline-block;
+  }
+  .leftcol {
+    width: 75%;
+  }
+
+  .rightcol {
+    width: 25%;
+  }
+
+  .bio-info li {
+    margin: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .contacts {
+    margin-top: 5%;
+  }
+
+  .paragraphs h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  .paragraphs p {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+  }
+  .contacts li {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 0;
+  }
+  .btn-intro {
+    margin-top: 50%;
+    font-size: 1.75rem;
+    padding: 1rem;
+    width: 15rem;
+    height: 6rem;
+    animation: none;
+    background: none;
+    border: 3px solid rgb(134, 232, 236);
+    background: transparent;
+    color: rgb(134, 232, 236);
+  }
+  .btn-close {
+    margin: 1rem auto;
+    height: 4rem;
+    width: 15rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border: 3px solid rgb(134, 232, 236);
+  }
+  #mypic {
+    width: 100%;
+    max-width: 200px;
+    margin: 5% 20%;
+  }
+}
 
 @media (max-width: 1280px) {
   body {
@@ -314,10 +395,11 @@ nav a:focus {
 
   .section-container {
     width: 100%;
+    height: 600px;
     overflow-x: hidden;
     overflow-y: auto;
     margin-top: 2rem;
-    display: inline-block
+    display: inline-block;
   }
   .leftcol {
     width: 75%;
@@ -328,25 +410,34 @@ nav a:focus {
   }
 
   .bio-info {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
+
+  .bio-info li {
+    font-size: 0.75rem;
+  }
+
+  .contacts {
+    margin-top: 5%;
+  }
+
   .paragraphs h1 {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-  }
-  .paragraphs p {
     font-size: 1.25rem;
     letter-spacing: 1px;
   }
+  .paragraphs p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
   .contacts li {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     letter-spacing: 1px;
     padding: 0 20%;
     margin: 0.5rem auto;
   }
   .btn-intro {
     margin-top: 50%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     padding: 1rem;
     width: 15rem;
     height: 6rem;
@@ -356,17 +447,20 @@ nav a:focus {
     background: transparent;
     color: rgb(134, 232, 236);
   }
-  .btn-close {
+
+  .btmcol .btn-close {
     margin: 1rem auto;
     height: 4rem;
     width: 15rem;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border: 3px solid rgb(134, 232, 236);
   }
+
   #mypic {
-    width: 80%;
-    margin: 5% 10%;
+    width: 100%;
+    max-width: 200px;
+    margin: 5% 20%;
   }
 }
 
@@ -374,21 +468,26 @@ nav a:focus {
   body {
     overflow: hidden;
   }
+  
   .top-container {
     width: 100%;
     max-height: 640px;
   }
+
   .topcol {
     flex-direction: column;
     width: 100%;
   }
+
   .section-container {
     top: 20%;
     width: 100%;
+    height: unset;
     overflow-x: hidden;
     overflow-y: auto;
-    display: inline-block
+    display: inline-block;
   }
+
   .leftcol,
   .rightcol {
     width: 100%;
@@ -397,21 +496,22 @@ nav a:focus {
     font-size: 1rem;
   }
   .paragraphs h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 1px;
   }
   .paragraphs p {
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     letter-spacing: 1px;
   }
   .contacts li {
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     padding: 0 20%;
-    margin: 0.5rem auto;
+    margin: 0 auto;
   }
+
   .btn-intro {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1rem;
     width: 10rem;
     height: 4rem;
@@ -426,39 +526,11 @@ nav a:focus {
     height: 4rem;
     width: 15rem;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border: 3px solid rgb(134, 232, 236);
   }
   #mypic {
     width: 80%;
-    margin: 5% 10%;
-  }
-}
-
-@media (max-height: 980px) {
-  .btn-intro {
-    font-size: 1.5rem;
-    padding: 1rem;
-    width: 15rem;
-    height: 6rem;
-    animation: none;
-    background: none;
-    border: 3px solid rgb(134, 232, 236);
-    background: transparent;
-    color: rgb(134, 232, 236);
-  }
-}
-
-@media (max-height: 720px) {
-  .btn-intro {
-    font-size: 1.5rem;
-    padding: 1rem;
-    width: 10rem;
-    height: 4rem;
-    animation: none;
-    background: none;
-    border: 3px solid rgb(134, 232, 236);
-    background: transparent;
-    color: rgb(134, 232, 236);
+    margin: 0 25%;
   }
 }

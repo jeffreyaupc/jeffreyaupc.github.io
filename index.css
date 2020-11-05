@@ -15,7 +15,7 @@ body {
 }
 
 article h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 0;
   color: rgb(12, 251, 239);
   font-weight: 700;
@@ -23,7 +23,7 @@ article h1 {
 }
 
 article p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 0;
   color: rgb(12, 251, 239);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -50,7 +50,7 @@ article p {
 .bio-info li {
   margin: 0.5rem;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -61,7 +61,7 @@ article p {
 }
 
 .contacts li {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.5px;
   padding: 0.5rem 0;
@@ -156,7 +156,7 @@ nav a:focus {
   opacity: 0;
   background: linear-gradient( to left, rgba(3, 155, 185, 0.85), rgba(84, 83, 134, 0.85) );
   /* height: 900px; */
-  max-height: 900px;
+  max-height: 800px;
   max-width: 1280px;
   position: absolute;
   top: 15%;
@@ -235,10 +235,10 @@ nav a:focus {
   outline: none;
   /* border: 3px solid rgb(241, 216, 216); */
   border: 3px solid rgb(134, 232, 236);
-  width: 20rem;
-  height: 8rem;
+  width: 15rem;
+  height: 7rem;
   padding: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   background: transparent;
   color: rgb(134, 232, 236);
 }
@@ -276,7 +276,7 @@ nav a:focus {
   width: 30rem;
   height: 8rem;
   padding: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   background: transparent;
   color: rgba(255, 255, 255, 0.8);
 }

@@ -160,7 +160,7 @@ nav a:focus {
     rgba(84, 83, 134, 0.85)
   );
   /* height: 900px; */
-  max-height: 900px;
+  max-height: 800px;
   max-width: 1280px;
   position: absolute;
   top: 15%;

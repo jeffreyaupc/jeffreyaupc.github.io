@@ -160,7 +160,7 @@ nav a:focus {
     rgba(84, 83, 134, 0.85)
   );
   /* height: 900px; */
-  max-height: 800px;
+  max-height: 900px;
   max-width: 1280px;
   position: absolute;
   top: 15%;
@@ -304,8 +304,6 @@ nav a:focus {
 
 /* media */
 
-/* max width */
-
 @media (max-width: 1920px) {
   body {
     overflow: hidden;
@@ -317,7 +315,7 @@ nav a:focus {
 
   .section-container {
     width: 100%;
-    height: 700px;
+    height: unset;
     overflow-x: hidden;
     overflow-y: auto;
     margin-top: 2rem;
@@ -395,7 +393,7 @@ nav a:focus {
 
   .section-container {
     width: 100%;
-    height: 600px;
+    height: unset;
     overflow-x: hidden;
     overflow-y: auto;
     margin-top: 2rem;
@@ -450,8 +448,9 @@ nav a:focus {
 
   .btmcol .btn-close {
     margin: 1rem auto;
+    margin-top: -60px;
     height: 4rem;
-    width: 15rem;
+    width: 8rem;
     padding: 1rem;
     font-size: 1rem;
     border: 3px solid rgb(134, 232, 236);

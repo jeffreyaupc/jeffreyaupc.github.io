@@ -520,10 +520,11 @@ nav a:focus {
     background: transparent;
     color: rgb(134, 232, 236);
   }
-  .btn-close {
+  .btmcol .btn-close {
+    margin-top: 0;
     margin: 1rem auto;
     height: 4rem;
-    width: 15rem;
+    width: 8rem;
     padding: 1rem;
     font-size: 1rem;
     border: 3px solid rgb(134, 232, 236);

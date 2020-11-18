@@ -285,6 +285,7 @@ nav a:focus {
 }
 
 .btn-close:hover {
+  cursor: pointer;
   animation: closeHover 1.2s infinite;
 }
 @keyframes closeHover {
